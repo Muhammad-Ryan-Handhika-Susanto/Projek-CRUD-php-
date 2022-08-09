@@ -18,7 +18,7 @@ if (!$result)
         </script>
         ";
 }
-// halo
+
 // var_dump($siswa);
 
 // cek apakah tombol submit sudah dipencet atau belum
