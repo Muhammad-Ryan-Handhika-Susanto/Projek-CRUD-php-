@@ -16,7 +16,7 @@ if(isset($_POST['submit']) ) {
     } else {
         echo "
         <script>
-            alert('Data berhasil di tambahkan');
+            alert('Data gagal di tambahkan');
             document.location.href='index.php';
         </script>
         ";

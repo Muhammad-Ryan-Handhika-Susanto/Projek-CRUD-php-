@@ -1,5 +1,7 @@
 <?php
 require "koneksi.php";
+
+$siswa = query("SELECT * FROM latihan");
 ?>
 
 <!DOCTYPE html>
@@ -42,17 +44,9 @@ require "koneksi.php";
                 <th scope="col">AKSI</th>
             </tr>
         </thead>
-
-        <?php
-        $sql = "SELECT * FROM latihan";
-        $result = mysqli_query($conn,$sql);
-        ?>
-        
+        <?php $i = 1; ?>
+        <?php foreach( $siswa as $row ) : ?>
         <tbody>
-        <?php
-            $i = 1;
-        ?>
-        <?php while( $row = mysqli_fetch_array($result)  ) : ?>
             <tr>
                 <td><?= $i; ?></td>
                 <td><?= $row["nik"]; ?></td>
@@ -68,9 +62,9 @@ require "koneksi.php";
                     </div>
                 </td>
             </tr>
-            <?php $i++; ?>
-            <?php endwhile; ?>
         </tbody>
+        <?php $i++; ?>
+        <?php endforeach; ?>
     </table>
     </body>
 </html>

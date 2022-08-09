@@ -13,7 +13,12 @@ if (!$conn) {
 // function query
 function query ($query) {
     global $conn;
-    mysqli_query($conn,$query);
+    $result = mysqli_query($conn,$query);
+    $rows = [];
+    while( $row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    } 
+    return $rows;
 }
 
 // function tambah data
@@ -34,7 +39,7 @@ function tambah ($data){
 }
 
 // function hapus data
-function delete($id) {
+function hapus($id) {
     global $conn; 
     mysqli_query($conn, "DELETE FROM latihan WHERE id = $id");
 
@@ -42,7 +47,7 @@ function delete($id) {
 }
 
 // function ubah data
-function update($data) {
+function ubah($data) {
     global $conn;
      $id      = $data['id'];
      $nik     = htmlspecialchars($data['nik']);

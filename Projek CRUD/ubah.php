@@ -25,17 +25,17 @@ if (!$result)
 if(isset($_POST['submit']) ) {
    
     // cek apakah data berhasil di update atau gagal
-    if(update($_POST) > 0 ) {
+    if(ubah($_POST) > 0 ) {
         echo "
         <script>
-            alert('Data berhasil di update');
+            alert('Data berhasil di ubah');
             document.location.href='index.php';
         </script>
         ";
     } else {
         echo "
         <script>
-            alert('Data berhasil di update');
+            alert('Data berhasil di ubah');
             document.location.href='index.php';
         </script>
         ";
