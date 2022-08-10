@@ -80,7 +80,7 @@ if(isset($_POST['submit']) ) {
 </head>
 
 <body>
-    <h1>update Data Siswa</h1>
+    <h1>Update Data Siswa</h1>
     <form action="" method="POST">
         <input type="hidden" name="id" value="<?= $result['id']; ?>">
         <div>
