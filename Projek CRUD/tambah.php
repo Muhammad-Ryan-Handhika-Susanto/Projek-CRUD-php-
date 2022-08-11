@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-require "koneksi.php";
+require "functions.php";
 
 // cek apakah tombol submit sudah dipencet atau belum
 if(isset($_POST['submit']) ) {

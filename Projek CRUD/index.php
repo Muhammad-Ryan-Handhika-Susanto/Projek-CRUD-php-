@@ -1,5 +1,5 @@
 <?php
-require "koneksi.php";
+require "functions.php";
 
 $siswa = query("SELECT * FROM latihan");
 ?>

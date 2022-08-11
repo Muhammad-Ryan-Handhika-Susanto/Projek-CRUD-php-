@@ -1,5 +1,5 @@
 <?php
-require 'koneksi.php';
+require 'functions.php';
 
 $id = $_GET['id'];
 

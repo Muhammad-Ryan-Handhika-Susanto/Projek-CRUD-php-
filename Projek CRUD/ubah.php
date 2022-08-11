@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-require "koneksi.php";
+require "functions.php";
 
 // ambil data di url
 $id = $_GET['id'];
