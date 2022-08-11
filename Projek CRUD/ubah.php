@@ -56,6 +56,7 @@ if(isset($_POST['submit']) ) {
         div {
             width: 350px;
             height: 400px;
+            border-radius: 10px;
             background-color: lightblue;
             position: relative;
             left: 510px;
