@@ -98,7 +98,7 @@ if(isset($_POST['submit']) ) {
                 <input type="text" name="gambar" id="gambar" required>
             </li>
         </ul>
-                <button type="submit" name="submit" class="btn btn-outline-success">Tambah Data</button>
+                <button type="submit" name="submit" class="btn btn-outline-success">Add</button>
         </div>
     </form>
 </body>
